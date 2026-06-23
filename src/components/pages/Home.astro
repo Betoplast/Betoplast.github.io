@@ -67,8 +67,6 @@ const tr = t(lang);
     display: flex; align-items: center;
     color: #fff;
     padding-block: clamp(7rem, 14vh, 11rem);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
   }
 
   /* ---- atmospheric, blurred backgrounds ---- */
@@ -166,14 +164,6 @@ const tr = t(lang);
   @media (prefers-reduced-motion: reduce) {
     .slide--hero .slide__lead, .slide--hero .hero-stats { animation: none; }
     .slide__scroll { animation: none; }
-  }
-</style>
-
-<!-- Scroll-snap is scoped to pages that render this component (home only). -->
-<style is:global>
-  html { scroll-snap-type: y proximity; scroll-padding-top: 0; }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-snap-type: none; }
   }
 </style>
 
