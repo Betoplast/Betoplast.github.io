@@ -1,0 +1,39 @@
+---
+import { getLang, t, localizePath } from '../i18n/utils';
+interface Props {
+  heading?: string;
+  text?: string;
+}
+const lang = getLang(Astro.currentLocale);
+const tr = t(lang);
+const { heading = tr.cta.defaultHeading, text = tr.cta.defaultText } = Astro.props;
+const contactHref = localizePath('/contact', lang);
+---
+
+<section class="cta-band">
+  <div class="cta-band__bg" aria-hidden="true"></div>
+  <div class="container cta-band__inner reveal">
+    <div>
+      <h2>{heading}</h2>
+      <p class="lead">{text}</p>
+    </div>
+    <a href={contactHref} class="btn btn--light">{tr.common.contactUs} <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<style>
+  .cta-band { position: relative; color: #fff; isolation: isolate; }
+  .cta-band__bg {
+    position: absolute; inset: 0; z-index: -1;
+    background:
+      radial-gradient(110% 140% at 100% 0%, rgba(43,127,255,.42) 0%, rgba(43,127,255,0) 55%),
+      radial-gradient(90% 130% at 0% 100%, rgba(0,179,214,.28) 0%, rgba(0,179,214,0) 50%),
+      linear-gradient(115deg, #11151b 0%, #1a2330 60%, #16314d 100%);
+  }
+  .cta-band__inner {
+    display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; flex-wrap: wrap;
+    padding-block: clamp(3.5rem, 7vw, 5.5rem);
+  }
+  .cta-band__inner h2 { color: #fff; max-width: 20ch; }
+  .cta-band__inner .lead { color: #c3d0de; margin-top: .9rem; max-width: 50ch; }
+</style>
