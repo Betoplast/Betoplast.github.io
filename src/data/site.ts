@@ -7,4 +7,9 @@ export const site = {
   // FormSubmit.co AJAX endpoint — no signup; mail goes to `email`.
   // First submission triggers a one-time activation email to that inbox.
   formEndpoint: 'https://formsubmit.co/ajax/info@betoplast.ch',
+  // Sister company (copper downstream producer).
+  related: {
+    name: 'Almalyk MMC – Betoplast',
+    url: 'https://www.ammc-betoplast.com',
+  },
 };

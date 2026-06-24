@@ -47,6 +47,13 @@ export const ui = {
       defaultHeading: 'Let’s discuss your energy project',
       defaultText: 'Tell us the scope — development, engineering, construction or supply — and we will come back with a way forward.',
     },
+    related: {
+      eyebrow: 'Related company',
+      footerLabel: 'Sister company',
+      text: 'Our sister company, Almalyk MMC – Betoplast, produces oxygen-free copper and electronics-grade materials — the conductors behind the power and electrification projects we build.',
+      cta: 'Visit Almalyk MMC – Betoplast',
+      servicesLink: 'Copper conductors by our sister company',
+    },
     home: {
       heroEyebrow: 'Energy & infrastructure · Switzerland',
       heroH1: 'Energy infrastructure,<br />engineered to endure.',
@@ -225,6 +232,13 @@ export const ui = {
     cta: {
       defaultHeading: 'Sprechen wir über Ihr Energieprojekt',
       defaultText: 'Nennen Sie uns den Umfang — Entwicklung, Engineering, Bau oder Lieferung — und wir zeigen Ihnen den Weg nach vorn.',
+    },
+    related: {
+      eyebrow: 'Verbundenes Unternehmen',
+      footerLabel: 'Schwestergesellschaft',
+      text: 'Unser Schwesterunternehmen Almalyk MMC – Betoplast produziert sauerstofffreies Kupfer und Materialien in Elektronikqualität — die Leiter hinter den Strom- und Elektrifizierungsprojekten, die wir bauen.',
+      cta: 'Almalyk MMC – Betoplast besuchen',
+      servicesLink: 'Kupferleiter von unserem Schwesterunternehmen',
     },
     home: {
       heroEyebrow: 'Energie & Infrastruktur · Schweiz',

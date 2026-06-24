@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
+import { site } from '../../data/site';
 import { getLang, t } from '../../i18n/utils';
 
 const lang = getLang(Astro.currentLocale);
@@ -30,6 +31,11 @@ const s = tr.services;
           </div>
           <ul class="svc__points">
             {item.points.map((p) => <li>{p}</li>)}
+            {i === 0 && (
+              <li class="svc__related">
+                <a href={site.related.url} target="_blank" rel="noopener">{tr.related.servicesLink} <span class="arrow">↗</span></a>
+              </li>
+            )}
           </ul>
         </article>
       ))}
@@ -64,5 +70,10 @@ const s = tr.services;
     content: ""; position: absolute; left: 0; top: .55em;
     width: 7px; height: 7px; background: var(--spark); border-radius: 1px;
   }
+  .svc__related { padding-left: 1.4rem; margin-top: .5rem; }
+  .svc__related::before { display: none; }
+  .svc__related a { font-weight: 600; color: var(--blue); font-size: .92rem; display: inline-flex; align-items: center; gap: .4rem; }
+  .svc__related a:hover .arrow { transform: translate(2px, -2px); }
+  .svc__related .arrow { transition: transform .2s var(--ease); }
   @media (max-width: 820px) { .svc { grid-template-columns: 1fr; gap: 1.2rem; } }
 </style>
