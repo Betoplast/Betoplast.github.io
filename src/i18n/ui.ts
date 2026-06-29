@@ -11,7 +11,7 @@ export const ui = {
   en: {
     meta: {
       siteDescription:
-        'BETOPLAST AG is a Swiss energy and infrastructure company with three decades in oil, gas and power — from project development and engineering to industrial construction and energy trading.',
+        'BETOPLAST AG is a Swiss energy and infrastructure company with three decades in oil, gas and power — from project development and engineering to mining, industrial construction and energy trading.',
       tagline: 'Energy & infrastructure since 1987',
     },
     nav: {
@@ -30,11 +30,11 @@ export const ui = {
       skipToContent: 'Skip to content',
     },
     footer: {
-      desc: 'BETOPLAST AG — a Swiss energy and infrastructure company active in power projects, hydrocarbon resources, industrial construction and energy trading.',
+      desc: 'BETOPLAST AG — a Swiss energy and infrastructure company active in power projects, hydrocarbon resources, mining, industrial construction and energy trading.',
       navigate: 'Navigate',
       office: 'Registered office',
       rights: 'All rights reserved.',
-      note: 'Power · oil & gas · construction · trading',
+      note: 'Power · oil & gas · mining · construction · trading',
       uid: 'UID',
     },
     legalEntity: 'BETOPLAST AG',
@@ -48,11 +48,11 @@ export const ui = {
       defaultText: 'Tell us the scope — development, engineering, construction or supply — and we will come back with a way forward.',
     },
     related: {
-      eyebrow: 'Related company',
-      footerLabel: 'Sister company',
-      text: 'Our sister company, Almalyk MMC – Betoplast, produces oxygen-free copper and electronics-grade materials — the conductors behind the power and electrification projects we build.',
+      eyebrow: 'Subsidiary',
+      footerLabel: 'Subsidiary',
+      text: 'Our subsidiary, Almalyk MMC – Betoplast, produces oxygen-free copper and electronics-grade materials — the conductors behind the power and electrification projects we build.',
       cta: 'Visit Almalyk MMC – Betoplast',
-      servicesLink: 'Copper conductors by our sister company',
+      servicesLink: 'Copper conductors by our subsidiary',
     },
     home: {
       heroEyebrow: 'Energy & infrastructure · Switzerland',
@@ -62,7 +62,7 @@ export const ui = {
       stats: [
         { v: '1987', l: 'Founded in Switzerland' },
         { v: '30+ yrs', l: 'In oil, gas & power' },
-        { v: '4', l: 'Core business areas' },
+        { v: '5', l: 'Core business areas' },
         { v: '9', l: 'International partners' },
       ],
       introEyebrow: 'What we do',
@@ -72,11 +72,12 @@ export const ui = {
       capabilities: [
         { title: 'Power industry projects', text: 'Development, design and construction of power plants, substations and grid infrastructure.' },
         { title: 'Hydrocarbon resources', text: 'Full-lifecycle management of oil and gas assets — from concept design through technology selection and operations.' },
+        { title: 'Mining', text: 'Extraction and supply of minerals and raw materials, from resource development through to operating mines.' },
         { title: 'Industrial construction', text: 'Heavy-industry builds including petrochemical complexes and oil & gas processing plants.' },
         { title: 'Energy trading', text: 'Trading operations across coal and natural gas markets, connecting producers and consumers.' },
       ],
       servicesEyebrow: 'Services',
-      servicesH2: 'Four areas, one partner',
+      servicesH2: 'Five areas, one partner',
     },
     about: {
       heroEyebrow: 'About us',
@@ -88,7 +89,7 @@ export const ui = {
       whoP1:
         'BETOPLAST AG is a Swiss company with more than thirty years of experience in the oil and gas sector and in the wider energy industry. We develop, design and build energy and infrastructure facilities, and we operate them through their working life.',
       whoP2:
-        'Our work spans electric power projects, hydrocarbon energy resources, industrial construction and the trading of energy commodities — a combination that lets us take a project from first concept all the way through to a producing, traded asset.',
+        'Our work spans electric power projects, hydrocarbon energy resources, mining, industrial construction and the trading of energy commodities — a combination that lets us take a project from first concept all the way through to a producing, traded asset.',
       approachEyebrow: 'How we operate',
       approachH2: 'Two complementary tracks',
       approachLead:
@@ -106,7 +107,7 @@ export const ui = {
       heroEyebrow: 'Services',
       heroH1: 'Across the energy value chain',
       heroLead:
-        'Four areas of work, delivered to international standards — and often combined on a single project, from development through to supply.',
+        'Five areas of work, delivered to international standards — and often combined on a single project, from development through to supply.',
       items: [
         {
           title: 'Electric power industry projects',
@@ -124,6 +125,15 @@ export const ui = {
             'Conceptual and front-end design',
             'Technology selection and engineering',
             'Technical supervision and operations support',
+          ],
+        },
+        {
+          title: 'Mining & mineral resources',
+          summary: 'Development and operation of mining assets and the supply of mineral raw materials.',
+          points: [
+            'Mineral resource development',
+            'Mine construction and operation',
+            'Supply of mined raw materials',
           ],
         },
         {
@@ -197,7 +207,7 @@ export const ui = {
   de: {
     meta: {
       siteDescription:
-        'Die BETOPLAST AG ist ein Schweizer Energie- und Infrastrukturunternehmen mit drei Jahrzehnten Erfahrung in Öl, Gas und Strom — von Projektentwicklung und Engineering bis zu Industriebau und Energiehandel.',
+        'Die BETOPLAST AG ist ein Schweizer Energie- und Infrastrukturunternehmen mit drei Jahrzehnten Erfahrung in Öl, Gas und Strom — von Projektentwicklung und Engineering bis zu Bergbau, Industriebau und Energiehandel.',
       tagline: 'Energie & Infrastruktur seit 1987',
     },
     nav: {
@@ -216,11 +226,11 @@ export const ui = {
       skipToContent: 'Zum Inhalt springen',
     },
     footer: {
-      desc: 'BETOPLAST AG — ein Schweizer Energie- und Infrastrukturunternehmen in den Bereichen Stromprojekte, Kohlenwasserstoffe, Industriebau und Energiehandel.',
+      desc: 'BETOPLAST AG — ein Schweizer Energie- und Infrastrukturunternehmen in den Bereichen Stromprojekte, Kohlenwasserstoffe, Bergbau, Industriebau und Energiehandel.',
       navigate: 'Navigation',
       office: 'Eingetragener Sitz',
       rights: 'Alle Rechte vorbehalten.',
-      note: 'Strom · Öl & Gas · Bau · Handel',
+      note: 'Strom · Öl & Gas · Bergbau · Bau · Handel',
       uid: 'UID',
     },
     legalEntity: 'BETOPLAST AG',
@@ -234,11 +244,11 @@ export const ui = {
       defaultText: 'Nennen Sie uns den Umfang — Entwicklung, Engineering, Bau oder Lieferung — und wir zeigen Ihnen den Weg nach vorn.',
     },
     related: {
-      eyebrow: 'Verbundenes Unternehmen',
-      footerLabel: 'Schwestergesellschaft',
-      text: 'Unser Schwesterunternehmen Almalyk MMC – Betoplast produziert sauerstofffreies Kupfer und Materialien in Elektronikqualität — die Leiter hinter den Strom- und Elektrifizierungsprojekten, die wir bauen.',
+      eyebrow: 'Tochtergesellschaft',
+      footerLabel: 'Tochtergesellschaft',
+      text: 'Unsere Tochtergesellschaft Almalyk MMC – Betoplast produziert sauerstofffreies Kupfer und Materialien in Elektronikqualität — die Leiter hinter den Strom- und Elektrifizierungsprojekten, die wir bauen.',
       cta: 'Almalyk MMC – Betoplast besuchen',
-      servicesLink: 'Kupferleiter von unserem Schwesterunternehmen',
+      servicesLink: 'Kupferleiter von unserer Tochtergesellschaft',
     },
     home: {
       heroEyebrow: 'Energie & Infrastruktur · Schweiz',
@@ -248,7 +258,7 @@ export const ui = {
       stats: [
         { v: '1987', l: 'In der Schweiz gegründet' },
         { v: '30+ J.', l: 'In Öl, Gas & Strom' },
-        { v: '4', l: 'Kerngeschäftsfelder' },
+        { v: '5', l: 'Kerngeschäftsfelder' },
         { v: '9', l: 'Internationale Partner' },
       ],
       introEyebrow: 'Was wir tun',
@@ -258,11 +268,12 @@ export const ui = {
       capabilities: [
         { title: 'Stromprojekte', text: 'Entwicklung, Planung und Bau von Kraftwerken, Umspannwerken und Netzinfrastruktur.' },
         { title: 'Kohlenwasserstoffe', text: 'Lebenszyklus-Management von Öl- und Gasanlagen — von der Konzeptplanung über die Technologieauswahl bis zum Betrieb.' },
+        { title: 'Bergbau', text: 'Gewinnung und Lieferung von Mineralien und Rohstoffen — von der Lagerstättenentwicklung bis zum Betrieb von Bergwerken.' },
         { title: 'Industriebau', text: 'Schwerindustrieller Bau, darunter Petrochemiekomplexe sowie Öl- und Gasaufbereitungsanlagen.' },
         { title: 'Energiehandel', text: 'Handelsaktivitäten in den Kohle- und Erdgasmärkten, die Produzenten und Verbraucher verbinden.' },
       ],
       servicesEyebrow: 'Leistungen',
-      servicesH2: 'Vier Felder, ein Partner',
+      servicesH2: 'Fünf Felder, ein Partner',
     },
     about: {
       heroEyebrow: 'Über uns',
@@ -274,7 +285,7 @@ export const ui = {
       whoP1:
         'Die BETOPLAST AG ist ein Schweizer Unternehmen mit über dreissig Jahren Erfahrung im Öl- und Gassektor und in der breiteren Energiewirtschaft. Wir entwickeln, planen und bauen Energie- und Infrastrukturanlagen und betreiben sie über ihre gesamte Lebensdauer.',
       whoP2:
-        'Unsere Arbeit umfasst Stromprojekte, Kohlenwasserstoff-Ressourcen, Industriebau und den Handel mit Energierohstoffen — eine Kombination, mit der wir ein Projekt vom ersten Konzept bis zur produzierenden, gehandelten Anlage führen.',
+        'Unsere Arbeit umfasst Stromprojekte, Kohlenwasserstoff-Ressourcen, Bergbau, Industriebau und den Handel mit Energierohstoffen — eine Kombination, mit der wir ein Projekt vom ersten Konzept bis zur produzierenden, gehandelten Anlage führen.',
       approachEyebrow: 'Wie wir arbeiten',
       approachH2: 'Zwei sich ergänzende Bereiche',
       approachLead:
@@ -292,7 +303,7 @@ export const ui = {
       heroEyebrow: 'Leistungen',
       heroH1: 'Entlang der Energie-Wertschöpfungskette',
       heroLead:
-        'Vier Arbeitsfelder nach internationalen Standards — oft in einem einzigen Projekt verbunden, von der Entwicklung bis zur Lieferung.',
+        'Fünf Arbeitsfelder nach internationalen Standards — oft in einem einzigen Projekt verbunden, von der Entwicklung bis zur Lieferung.',
       items: [
         {
           title: 'Projekte der Elektrizitätswirtschaft',
@@ -310,6 +321,15 @@ export const ui = {
             'Konzept- und Front-End-Planung',
             'Technologieauswahl und Engineering',
             'Technische Überwachung und Betriebsunterstützung',
+          ],
+        },
+        {
+          title: 'Bergbau & Mineralrohstoffe',
+          summary: 'Entwicklung und Betrieb von Bergbauanlagen sowie Lieferung mineralischer Rohstoffe.',
+          points: [
+            'Erschliessung von Mineralvorkommen',
+            'Bau und Betrieb von Bergwerken',
+            'Lieferung von Bergbaurohstoffen',
           ],
         },
         {
