@@ -11,7 +11,7 @@ export const ui = {
   en: {
     meta: {
       siteDescription:
-        'BETOPLAST AG is a Swiss energy and infrastructure company with three decades in oil, gas and power — from project development and engineering to mining, industrial construction and energy trading.',
+        'BETOPLAST AG is a Swiss energy and infrastructure company with three and a half decades in oil, gas and power — from project development and engineering to mining, industrial construction and energy trading.',
       tagline: 'Energy & infrastructure since 1987',
     },
     nav: {
@@ -58,10 +58,10 @@ export const ui = {
       heroEyebrow: 'Energy & infrastructure · Switzerland',
       heroH1: 'Energy infrastructure,<br />engineered to endure.',
       heroLead:
-        'BETOPLAST AG has spent three decades building and operating energy infrastructure — from power plants and substations to oil, gas and petrochemical facilities, backed by an international trading desk.',
+        'BETOPLAST AG has spent more than three and a half decades building and operating energy infrastructure — from power plants and substations to oil, gas and petrochemical facilities, backed by an international trading desk.',
       stats: [
         { v: '1987', l: 'Founded in Switzerland' },
-        { v: '30+ yrs', l: 'In oil, gas & power' },
+        { v: '35+ yrs', l: 'In oil, gas & power' },
         { v: '5', l: 'Core business areas' },
         { v: '9', l: 'International partners' },
       ],
@@ -85,9 +85,9 @@ export const ui = {
       heroLead:
         'Founded in Lucerne in 1987, BETOPLAST AG combines engineering depth with commercial reach across the energy value chain.',
       whoEyebrow: 'Who we are',
-      whoH2: 'Three decades in energy',
+      whoH2: 'Three and a half decades in energy',
       whoP1:
-        'BETOPLAST AG is a Swiss company with more than thirty years of experience in the oil and gas sector and in the wider energy industry. We develop, design and build energy and infrastructure facilities, and we operate them through their working life.',
+        'BETOPLAST AG is a Swiss company with more than thirty-five years of experience in the oil and gas sector and in the wider energy industry. We develop, design and build energy and infrastructure facilities, and we operate them through their working life.',
       whoP2:
         'Our work spans electric power projects, hydrocarbon energy resources, mining, industrial construction and the trading of energy commodities — a combination that lets us take a project from first concept all the way through to a producing, traded asset.',
       approachEyebrow: 'How we operate',
@@ -202,12 +202,51 @@ export const ui = {
       statusNet: 'Network error. Please try again.',
       statusNotConfigured: 'Form endpoint not configured yet (set your endpoint in src/data/site.ts).',
     },
+    impressum: {
+      navLabel: 'Impressum',
+      heroEyebrow: 'Legal notice',
+      heroH1: 'Impressum',
+      heroLead: 'Legal information about BETOPLAST AG and this website.',
+      companyTitle: 'Company information',
+      rows: [
+        { k: 'Company name', v: 'BETOPLAST AG' },
+        { k: 'Legal form', v: 'Aktiengesellschaft (AG)' },
+        { k: 'Registered office', v: 'Zentralstrasse 44, CH-6003 Lucerne, Switzerland' },
+        { k: 'Founded', v: '9 November 1987' },
+        { k: 'Commercial register', v: 'Handelsregister Luzern · CH-020.3.903.073-7' },
+        { k: 'UID (company ID)', v: 'CHE-101.403.507' },
+      ],
+      contactTitle: 'Contact',
+      postalLabel: 'Postal address',
+      emailLabel: 'Email',
+      websiteLabel: 'Website',
+      website: 'betoplast.ch',
+      responsibilityTitle: 'Content responsibility',
+      responsibilityText: 'Responsible for the editorial content of this website in accordance with applicable Swiss law:',
+      responsibilityName: 'The Management of BETOPLAST AG',
+      responsibilityAddress: 'Zentralstrasse 44, CH-6003 Lucerne, Switzerland',
+      disclaimerTitle: 'Liability disclaimer',
+      disclaimer: [
+        'The information provided on this website is for general informational purposes only. While BETOPLAST AG makes every effort to ensure that the content is accurate and up to date, we do not guarantee the completeness, reliability or suitability of the information, products or services described herein for any particular purpose.',
+        'Any reliance you place on such information is strictly at your own risk. BETOPLAST AG shall not be liable for any loss or damage (including indirect or consequential loss) arising from the use of this website or reliance on its content.',
+        'This website may contain links to external websites that are not under the control of BETOPLAST AG. We have no control over the content, nature or availability of those sites and accept no responsibility for them.',
+        'Every effort is made to keep the website operational. However, BETOPLAST AG accepts no liability for temporary unavailability due to technical issues, maintenance or circumstances beyond our reasonable control.',
+      ],
+      copyrightTitle: 'Copyright & intellectual property',
+      copyright: [
+        '© 1987–2026 BETOPLAST AG. All rights reserved.',
+        'All content, texts, images, graphics and other materials on this website are protected by Swiss and international copyright law. Any reproduction, distribution, modification or commercial use without prior written consent from BETOPLAST AG is strictly prohibited.',
+      ],
+      groupNote: 'This website is hosted on GitHub Pages. Some services and projects referenced may be carried out in cooperation with group companies or partners, including the subsidiary Almalyk MMC – Betoplast (Uzbekistan).',
+      privacyTitle: 'Data protection notice',
+      privacyText: 'This site does not use tracking cookies. For details on how we handle personal data, please contact us directly.',
+    },
   },
 
   de: {
     meta: {
       siteDescription:
-        'Die BETOPLAST AG ist ein Schweizer Energie- und Infrastrukturunternehmen mit drei Jahrzehnten Erfahrung in Öl, Gas und Strom — von Projektentwicklung und Engineering bis zu Bergbau, Industriebau und Energiehandel.',
+        'Die BETOPLAST AG ist ein Schweizer Energie- und Infrastrukturunternehmen mit dreieinhalb Jahrzehnten Erfahrung in Öl, Gas und Strom — von Projektentwicklung und Engineering bis zu Bergbau, Industriebau und Energiehandel.',
       tagline: 'Energie & Infrastruktur seit 1987',
     },
     nav: {
@@ -254,10 +293,10 @@ export const ui = {
       heroEyebrow: 'Energie & Infrastruktur · Schweiz',
       heroH1: 'Energieinfrastruktur,<br />gebaut für Jahrzehnte.',
       heroLead:
-        'Die BETOPLAST AG baut und betreibt seit drei Jahrzehnten Energieinfrastruktur — von Kraftwerken und Umspannwerken bis zu Öl-, Gas- und Petrochemieanlagen, ergänzt durch einen internationalen Handelsbereich.',
+        'Die BETOPLAST AG baut und betreibt seit über dreieinhalb Jahrzehnten Energieinfrastruktur — von Kraftwerken und Umspannwerken bis zu Öl-, Gas- und Petrochemieanlagen, ergänzt durch einen internationalen Handelsbereich.',
       stats: [
         { v: '1987', l: 'In der Schweiz gegründet' },
-        { v: '30+ J.', l: 'In Öl, Gas & Strom' },
+        { v: '35+ J.', l: 'In Öl, Gas & Strom' },
         { v: '5', l: 'Kerngeschäftsfelder' },
         { v: '9', l: 'Internationale Partner' },
       ],
@@ -281,9 +320,9 @@ export const ui = {
       heroLead:
         '1987 in Luzern gegründet, verbindet die BETOPLAST AG technische Tiefe mit kommerzieller Reichweite entlang der gesamten Energie-Wertschöpfungskette.',
       whoEyebrow: 'Wer wir sind',
-      whoH2: 'Drei Jahrzehnte in der Energie',
+      whoH2: 'Dreieinhalb Jahrzehnte in der Energie',
       whoP1:
-        'Die BETOPLAST AG ist ein Schweizer Unternehmen mit über dreissig Jahren Erfahrung im Öl- und Gassektor und in der breiteren Energiewirtschaft. Wir entwickeln, planen und bauen Energie- und Infrastrukturanlagen und betreiben sie über ihre gesamte Lebensdauer.',
+        'Die BETOPLAST AG ist ein Schweizer Unternehmen mit über fünfunddreissig Jahren Erfahrung im Öl- und Gassektor und in der breiteren Energiewirtschaft. Wir entwickeln, planen und bauen Energie- und Infrastrukturanlagen und betreiben sie über ihre gesamte Lebensdauer.',
       whoP2:
         'Unsere Arbeit umfasst Stromprojekte, Kohlenwasserstoff-Ressourcen, Bergbau, Industriebau und den Handel mit Energierohstoffen — eine Kombination, mit der wir ein Projekt vom ersten Konzept bis zur produzierenden, gehandelten Anlage führen.',
       approachEyebrow: 'Wie wir arbeiten',
@@ -397,6 +436,45 @@ export const ui = {
       statusErr: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.',
       statusNet: 'Netzwerkfehler. Bitte versuchen Sie es erneut.',
       statusNotConfigured: 'Formular-Endpunkt noch nicht konfiguriert (Endpunkt in src/data/site.ts setzen).',
+    },
+    impressum: {
+      navLabel: 'Impressum',
+      heroEyebrow: 'Rechtliche Hinweise',
+      heroH1: 'Impressum',
+      heroLead: 'Rechtliche Informationen über die BETOPLAST AG und diese Website.',
+      companyTitle: 'Unternehmensangaben',
+      rows: [
+        { k: 'Firmenname', v: 'BETOPLAST AG' },
+        { k: 'Rechtsform', v: 'Aktiengesellschaft (AG)' },
+        { k: 'Eingetragener Sitz', v: 'Zentralstrasse 44, CH-6003 Luzern, Schweiz' },
+        { k: 'Gegründet', v: '9. November 1987' },
+        { k: 'Handelsregister', v: 'Handelsregister Luzern · CH-020.3.903.073-7' },
+        { k: 'UID (Unternehmens-ID)', v: 'CHE-101.403.507' },
+      ],
+      contactTitle: 'Kontakt',
+      postalLabel: 'Postanschrift',
+      emailLabel: 'E-Mail',
+      websiteLabel: 'Website',
+      website: 'betoplast.ch',
+      responsibilityTitle: 'Inhaltliche Verantwortung',
+      responsibilityText: 'Verantwortlich für den redaktionellen Inhalt dieser Website gemäss geltendem Schweizer Recht:',
+      responsibilityName: 'Die Geschäftsleitung der BETOPLAST AG',
+      responsibilityAddress: 'Zentralstrasse 44, CH-6003 Luzern, Schweiz',
+      disclaimerTitle: 'Haftungsausschluss',
+      disclaimer: [
+        'Die Informationen auf dieser Website dienen ausschliesslich allgemeinen Informationszwecken. Die BETOPLAST AG ist bemüht, die Inhalte korrekt und aktuell zu halten, übernimmt jedoch keine Gewähr für Vollständigkeit, Zuverlässigkeit oder Eignung der dargestellten Informationen, Produkte oder Dienstleistungen für einen bestimmten Zweck.',
+        'Jegliches Vertrauen auf diese Informationen erfolgt auf eigenes Risiko. Die BETOPLAST AG haftet nicht für Verluste oder Schäden (einschliesslich indirekter oder Folgeschäden), die aus der Nutzung dieser Website oder dem Vertrauen auf deren Inhalte entstehen.',
+        'Diese Website kann Links zu externen Websites enthalten, die nicht der Kontrolle der BETOPLAST AG unterliegen. Wir haben keinen Einfluss auf Inhalt, Art oder Verfügbarkeit dieser Seiten und übernehmen dafür keine Verantwortung.',
+        'Wir bemühen uns, die Website betriebsbereit zu halten. Die BETOPLAST AG übernimmt jedoch keine Haftung für vorübergehende Nichtverfügbarkeit aufgrund technischer Probleme, Wartung oder Umständen ausserhalb unseres zumutbaren Einflusses.',
+      ],
+      copyrightTitle: 'Urheberrecht & geistiges Eigentum',
+      copyright: [
+        '© 1987–2026 BETOPLAST AG. Alle Rechte vorbehalten.',
+        'Alle Inhalte, Texte, Bilder, Grafiken und sonstigen Materialien auf dieser Website sind durch schweizerisches und internationales Urheberrecht geschützt. Jede Vervielfältigung, Verbreitung, Bearbeitung oder kommerzielle Nutzung ohne vorherige schriftliche Zustimmung der BETOPLAST AG ist untersagt.',
+      ],
+      groupNote: 'Diese Website wird auf GitHub Pages gehostet. Einige der genannten Leistungen und Projekte werden gegebenenfalls in Zusammenarbeit mit Konzerngesellschaften oder Partnern durchgeführt, darunter die Tochtergesellschaft Almalyk MMC – Betoplast (Usbekistan).',
+      privacyTitle: 'Datenschutzhinweis',
+      privacyText: 'Diese Website verwendet keine Tracking-Cookies. Für Einzelheiten zum Umgang mit personenbezogenen Daten kontaktieren Sie uns bitte direkt.',
     },
   },
 } as const;

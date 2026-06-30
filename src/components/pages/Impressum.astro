@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../data/site';
+import { getLang, t } from '../../i18n/utils';
+
+const lang = getLang(Astro.currentLocale);
+const tr = t(lang);
+const im = tr.impressum;
+---
+
+<Base title={im.navLabel} description={im.heroLead}>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">{im.heroEyebrow}</p>
+      <h1>{im.heroH1}</h1>
+      <p class="lead mt-2">{im.heroLead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container legal-grid">
+      <div class="legal-card card">
+        <h2 class="legal-card__title">{im.companyTitle}</h2>
+        <dl class="rows">
+          {im.rows.map((r) => (
+            <div class="row"><dt>{r.k}</dt><dd set:html={r.v.replace(/, /g, '<br />')} /></div>
+          ))}
+        </dl>
+      </div>
+
+      <div class="legal-card card">
+        <h2 class="legal-card__title">{im.contactTitle}</h2>
+        <div class="contact-block">
+          <span class="lbl">{im.postalLabel}</span>
+          <address>{site.name}<br />{tr.address.line1}<br />{tr.address.line2}<br />{tr.address.country}</address>
+        </div>
+        <div class="contact-block">
+          <span class="lbl">{im.emailLabel}</span>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </div>
+        <div class="contact-block">
+          <span class="lbl">{im.websiteLabel}</span>
+          <a href={`https://${im.website}`} target="_blank" rel="noopener">{im.website}</a>
+        </div>
+      </div>
+
+      <div class="legal-card card span-2">
+        <h2 class="legal-card__title">{im.responsibilityTitle}</h2>
+        <p>{im.responsibilityText}</p>
+        <p class="resp-name">{im.responsibilityName}</p>
+        <p class="resp-addr">{im.responsibilityAddress}</p>
+      </div>
+
+      <div class="legal-card card span-2">
+        <h2 class="legal-card__title">{im.disclaimerTitle}</h2>
+        {im.disclaimer.map((p) => <p class="muted">{p}</p>)}
+      </div>
+
+      <div class="legal-card card span-2">
+        <h2 class="legal-card__title">{im.copyrightTitle}</h2>
+        {im.copyright.map((p) => <p class="muted">{p}</p>)}
+        <p class="note">{im.groupNote}</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="privacy">
+        <span class="privacy__dot" aria-hidden="true"></span>
+        <strong>{im.privacyTitle}:</strong> {im.privacyText}
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-hero { background: var(--ink); color: #fff; padding-top: calc(76px + clamp(2.5rem, 6vw, 4.5rem)); padding-bottom: clamp(3.5rem, 8vw, 6rem); }
+  .page-hero h1 { color: #fff; }
+  .page-hero .lead { color: #aab6c4; max-width: 60ch; }
+  .page-hero .eyebrow { color: var(--blue-300); }
+  .page-hero .eyebrow::before { background: var(--spark-300); }
+
+  .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .span-2 { grid-column: 1 / -1; }
+  @media (max-width: 760px) { .legal-grid { grid-template-columns: 1fr; } .span-2 { grid-column: auto; } }
+
+  .legal-card { padding: clamp(1.6rem, 3vw, 2.2rem); }
+  .legal-card__title { font-size: 1.15rem; margin-bottom: 1.2rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+
+  .rows { display: flex; flex-direction: column; }
+  .row { display: flex; justify-content: space-between; gap: 1.5rem; padding: .7rem 0; border-bottom: 1px solid var(--line); font-size: .92rem; }
+  .row:last-child { border-bottom: 0; }
+  .row dt { color: var(--muted); }
+  .row dd { font-weight: 600; text-align: right; }
+
+  .contact-block { padding: .7rem 0; border-bottom: 1px solid var(--line); }
+  .contact-block:last-child { border-bottom: 0; }
+  .contact-block .lbl { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: .35rem; }
+  .contact-block address { font-style: normal; font-weight: 600; line-height: 1.6; }
+  .contact-block a { font-weight: 600; color: var(--blue); }
+  .contact-block a:hover { color: var(--blue-700); }
+
+  .resp-name { margin-top: 1rem; font-weight: 700; font-size: 1.1rem; }
+  .resp-addr { font-size: .9rem; color: var(--muted); margin-top: .2rem; }
+
+  .muted { color: var(--muted); font-size: .94rem; line-height: 1.7; }
+  .muted + .muted { margin-top: .9rem; }
+  .note { margin-top: 1.2rem; font-size: .82rem; color: var(--muted); padding-top: 1rem; border-top: 1px solid var(--line); }
+
+  .privacy {
+    display: inline-flex; align-items: center; gap: .55rem; flex-wrap: wrap;
+    margin-top: clamp(1.5rem, 3vw, 2rem);
+    font-size: .88rem; color: var(--muted);
+    background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px;
+    padding: .7rem 1.2rem;
+  }
+  .privacy strong { color: var(--ink); }
+  .privacy__dot { width: 8px; height: 8px; border-radius: 50%; background: #1f9d57; flex: none; }
+</style>
